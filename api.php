@@ -2,7 +2,7 @@
     header("Access-Control-Allow-Origin:https://webfinal--api.herokuapp.com/");
     header("Access-Control-Allow-Methods: GET, POST, PATCH, PUT, DELETE, OPTIONS");
     header("Access-Control-Allow-Headers: Content-Type, Accept, Authorization, X-Requested-With, X-Auth-Token, Origin, Application");
-    $con=mysqli_connect("192.168.0.3","landy","b0827213","webproject");
+    $con=mysqli_connect("127.126.3.109","root","123456789","webproject");
     if($con){
         $sql="select * from restaurant_list";
         $result = mysqli_query($con,$sql);
